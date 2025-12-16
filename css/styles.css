@@ -11044,3 +11044,138 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* ================================
+   CUSTOM COLOR PALETTE OVERRIDE
+   ================================ */
+
+:root {
+  /* Palette */
+  --dark-main: #1f1f1f;
+  --taupe-accent: #8a7d66;
+  --green-primary: #4f7f4f;
+  --gray-light: #cfcfcf;
+  --gray-mid: #bdbdbd;
+
+  /* Bootstrap overrides */
+  --bs-body-bg: var(--dark-main);
+  --bs-body-color: var(--gray-light);
+
+  --bs-primary: var(--green-primary);
+  --bs-secondary: var(--taupe-accent);
+  --bs-dark: var(--dark-main);
+  --bs-light: var(--gray-light);
+
+  --bs-link-color: var(--green-primary);
+  --bs-link-hover-color: var(--taupe-accent);
+}
+
+/* ================================
+   GLOBAL
+   ================================ */
+
+body {
+  background-color: var(--dark-main);
+  color: var(--gray-light);
+}
+
+/* ================================
+   NAVBAR
+   ================================ */
+
+.navbar {
+  background-color: var(--dark-main) !important;
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--gray-light) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--taupe-accent) !important;
+}
+
+/* ================================
+   HEADINGS
+   ================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gray-light);
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.btn-primary {
+  background-color: var(--green-primary);
+  border-color: var(--green-primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--taupe-accent);
+  border-color: var(--taupe-accent);
+}
+
+.btn-secondary {
+  background-color: var(--taupe-accent);
+  border-color: var(--taupe-accent);
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: var(--green-primary);
+  border-color: var(--green-primary);
+}
+
+/* ================================
+   SECTIONS & CARDS
+   ================================ */
+
+section {
+  background-color: var(--dark-main);
+}
+
+.card {
+  background-color: #262626;
+  color: var(--gray-light);
+  border: 1px solid var(--gray-mid);
+}
+
+/* ================================
+   FORMS
+   ================================ */
+
+.form-control,
+.form-select {
+  background-color: #262626;
+  color: var(--gray-light);
+  border: 1px solid var(--gray-mid);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--green-primary);
+  box-shadow: 0 0 0 0.2rem rgba(79, 127, 79, 0.25);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+  background-color: #181818;
+  color: var(--gray-light);
+  border-top: 1px solid var(--gray-mid);
+}
+
+footer a {
+  color: var(--green-primary);
+}
+
+footer a:hover {
+  color: var(--taupe-accent);
+}
